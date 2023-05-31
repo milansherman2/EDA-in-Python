@@ -12,19 +12,24 @@ I did some research and found that this idea is not unfounded, for a few reasons
 However, while I have anecdotal evidence and reasons to believe this is true, what do the data say?
 
 <h2>Data</h2>
-I obtained a dataset from Kaggle that includes every at bat by every player in Major League baseball from 1901 through 2021
-There are over 4.2 million observations in this dataset, where each observation is a player’s hitting statistics for a single game
-To compute the metrics noted on the previous slide, I will need the following variables:
-Player position (categorical with nine levels): the position a player plays in the field
-At bats (numerical): the number of at bats a player had during a game.  An at-bat is defined at a plate appearance that results in a hit or an out.  In particular, it excludes walks.
-Hits (numerical): the number of hits a player had in a game
-Doubles (numerical): the number of doubles a player had in a game
-Triples (numerical): the number of triples a player had in a game
-Home runs (numerical): the number of home runs a player had in a game
-In addition to these raw metrics, I will need the number singles a player hit in a game, which can be computed by taking the number of hits and subtracting the number of doubles, triples, and home runs
-As I am comparing these metrics of first basemen vs. other position players, I will need to aggregate my data by position
-The metrics that I am computing (batting average, slugging percentage, isolated power, and home run percentage) are based on at-bats, singles, doubles, triples, and home runs
-![image](https://github.com/milansherman2/EDA-in-Python/assets/85588082/e5e376cd-60a6-4dd0-897a-a926ac93044e)
+<p>I obtained a dataset from Kaggle that includes every at bat by every player in Major League baseball from 1901 through 2021 (https://www.kaggle.com/datasets/darinhawley/mlb-batting-stats-by-game-19012021).  There are over 4.2 million observations in this dataset, where each observation is a player’s hitting statistics for a single game, so data cleaning and aggregation were necessary to get the data needed to answer the question.</p>
+
+I generated the following for each player:
+- Player position (categorical with nine levels): the position a player plays in the field
+- At bats (numerical): the number of at bats a player had during a game.  An at-bat is defined at a plate appearance that results in a hit or an out.  In particular, it excludes walks.
+- Hits (numerical): the number of hits a player had in a game
+- Doubles (numerical): the number of doubles a player had in a game
+- Triples (numerical): the number of triples a player had in a game
+- Home runs (numerical): the number of home runs a player had in a game
+- Single (numerical): the number of singles a player had in a game, computed by taking the number of hits and subtracting the number of doubles, triples, and home runs
+- Batting average (numerical): the number of hits divide by the number of at-bats
+- Slugging percentage (numerical): [singles + 2(doubles) + 3(triples) + 4(home runs)]/at-bats
+- Isolated power (numerical): slugging percentage - batting average
+- Home run percentage (numerical): home runs/at-bats
+
+After each of these were generated for each player and each game, the data were aggregated by position in order to compare first basemen with other positions.  Pitchers were excluded from the analysis.
+
+
 
 
 <h2>Results</h2>
