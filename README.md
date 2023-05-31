@@ -7,7 +7,7 @@ Are First Basemen Power Hitters?
 I did some research and found that this idea is not unfounded, for a few reasons:
 1. First basemen do not require the quickness and agility of a middle infielder as they have less ground to cover
 2. First basemen tend to be taller/bigger players in order to have a bigger range in catching throws to first base
-3.  First base is an easier defensive position to play, so managers can afford to put players at that position who are stronger hitters than fielders
+3.  First base is an easier defensive position to play (fewer hits come to first basemen and they rarely have to make a throw), so managers can afford to put players at that position who are stronger hitters than fielders. 
 
 However, while I have anecdotal evidence and reasons to believe this is true, what do the data say?
 
@@ -33,8 +33,8 @@ After each of these were generated for each player and each game, the data were 
 <h2>Results</h2>
 
 High Level Takeaways:
-- The data supports the hypothesis that first basemen are better power hitters than other field players.
-- Slugging percentage is a better predictor of runs scored than batting average.
+- The data supports the hypothesis that first basemen are better power hitters than other field players.  This was substantiated via hypothesis testing on the difference of means between first basemen and non-first base position players (i.e., no pitchers) for the three power hitting metrics identified above.
+- Slugging percentage is a better predictor of runs scored than batting average.  This was established through a higher correlation with runs scored and a comparison of linear models.
 - There exists a correlation with at-bats and slugging percentage and batting average, so that players with more at-bats generally have higher batting averages and slugging percentages.  The direction of this relationship is unknown, but is likely bidirectional, i.e., players who hit more get better at it, and players who are better hitters will likely get more opportunities to hit.  
 
 <p>In terms of assumptions, there is an implicit assumption about the value of power hitting.  While we showed that slugging percentage is a more predictive metric than batting average with respect to runs scored, the question about whether first basemen tend to be better power hitters assumes that power hitters are valuable.  Another metric that is highly correlated with runs scored is base-out percentage, which is the ratio of the number bases a player nets to the number of outs that they generate.  In this analysis, we explored a hypothesis about power hitting and first basemen.  A more open question is which types of players tend to have the best base-out percentage?  A further assumption is about the values of runs scored.  Ultimately, scoring runs is only half of the equation.  No matter how many runs your team scores, you will still lose if your opponent scores more.  </p>
