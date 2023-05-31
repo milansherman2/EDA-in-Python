@@ -2,7 +2,7 @@
 Are First Basemen Power Hitters?
 
 <h2>Overview</h2>
-<p>In my experience following baseball, I have found that first basemen are often the power hitters on the team.  A power hitter can be loosely defined as a player hits the ball farther and who tends to hit more home runs, as well as doubles and triples (versus singles).</p>
+<p>In my experience following baseball, I have found that first basemen are often the power hitters on the team.  A power hitter can be loosely defined as a player has more extra base hits (versus singles).</p>
 
 I did some research and found that this idea is not unfounded, for a few reasons:
 1. First basemen do not require the quickness and agility of a middle infielder as they have less ground to cover
@@ -27,7 +27,7 @@ I generated the following for each player:
 - Isolated power (numerical): slugging percentage - batting average
 - Home run percentage (numerical): home runs/at-bats.  We include home run percentage to normalize home runs relative to the number of at-bats.
 
-After each of these were generated for each player and each game, the data were aggregated by position in order to compare first basemen with other positions.  Pitchers were excluded from the analysis.
+After each of these were generated for each player and each game, the data were aggregated by position in order to compare first basemen with other positions.  Pitchers were excluded from the analysis as they are notoriously bad hitters, and they don't even bat in the American League.
 
 
 <h2>Results</h2>
