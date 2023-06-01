@@ -1,6 +1,11 @@
 # EDA-in-Python
 Are First Basemen Power Hitters?
 
+  <h2>Languages Used</h2>
+  
+- <b>Python</b>
+
+
 <h2>Overview</h2>
 <p>In my experience following baseball, I have found that first basemen are often the power hitters on the team.  A power hitter can be loosely defined as a player has more extra base hits (versus singles).</p>
 
